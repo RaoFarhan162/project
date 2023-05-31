@@ -1,0 +1,251 @@
+<!DOCTYPE>
+<html>
+<head>
+</style>
+<link rel="stylesheet" href="assignment.css">
+<title>
+Assignment
+</head>
+</title>
+<body>
+<form>
+<h3> color </h3>
+<label for="favcolor">Select Color:</label>
+<input type="color" id="favcolor" name="favcolor"  value="#ff0000">
+<h3> date </h3>
+<input type="date">
+<br>
+<h3> datetime-local <h3>
+<label for="meetingtime">date and time:</label>
+<input type="datetime-local" id="meetingtime" name="meetingtime">
+<br>
+<h3> Email </h3>
+<label for="email">
+Enter your email:
+</label>
+<input type="email" id="email" name="email">
+<br>
+<br>
+<h3> Month </h3>
+<label for="fypmonth">
+FinalYearProject (month and year):
+</label>
+<input type="month" id="fypmonth" name="fypmonth">
+<br>
+<br>
+<h3> Number </h3>
+<label for="numbering">Enter any number:
+</label>
+<input type="number" id="quantity" name="quantity">
+<br>
+<br>
+<h3> Range </h3>
+<label for="points">select points from 1 to 5:
+</label>
+<input type="range" id="points" name="points" min="0" max="5">
+<br>
+<br>
+<h3> Search </h3>
+<label for="search">Search:
+</label>
+<input type="search" id="search" name="search">
+<br>
+<h3> radio buttons </h3>
+<p>Please select your favorite avenger:</p>
+  <input type="radio" id="iron man" name="hero" value="iron man">
+  <label for="iron man">iron man</label><br>
+  <input type="radio" id="captain america" name="hero" value="captain america">
+  <label for="captain america">captain america</label><br>
+  <input type="radio" id="hulk" name="hero" value="hulk">
+  <label for="hulk">hulk</label>
+<br>
+<br>
+<h3> Button <h3>
+<input type="button" value="Submit" onclick="Send()">
+<input type="button" value="Cancel" onclick="Send()">
+<br>
+<br>
+<h3> CheckBox </h3>
+<p> which cities have you visited </p>
+<input type="checkbox" id="city1" name="city1" value="Multan">
+<label for="city1"> Multan</label><br>
+<input type="checkbox" id="city2" name="city2" value="Islamabad">
+<label for="city2"> Islamabad</label><br>
+<input type="checkbox" id="city3" name="city3" value="Lahore">
+<label for="city3">Lahore</label><br>
+<br>
+<h3> Dropdown </h3>
+<label for="Movies">Select Movie:</label>
+
+<select name="movie" id="movie">
+  <option value="flash">Flash</option>
+  <option value="vikings">Vikings</option>
+  <option value="harry potter">Harry Potter</option>
+  <option value="spiderman">Spiderman</option>
+</select>
+<br>
+<h3 textarea </h3>
+<p> Maximum length is 10 </p>
+<textarea maxlength="10">
+Enter text here
+</textarea>
+<br>
+<h3 textarea </h3>
+<p> Minimum length is 10 </p>
+<textarea minlength="10">
+Enter text here
+</textarea>
+<br>
+<h3> Password </h3>
+<label for="password">Enter Password:
+</label>
+<input type="password" id="password" name="password">
+<br>
+<h3> Reset </h3>
+<input type="reset">
+<br>
+<h3> Submit </h3>
+<input type="Submit">
+<br>
+<h3> Url </h3>
+<label for="webpage">Enter Url:
+</label>
+  <input type="url" id="webpage" name="webpage">
+<br>
+<br>
+  <input type="submit">
+<br>
+<h3> Datalist </h3>
+<label for="car">Select Cars from the list:
+</label>
+  <input list="cars" name="car" id="car">
+  <datalist id="cars">
+    <option value="CHR">
+    <option value="V8">
+    <option value="LAND CRUISER">
+    <option value="PRADO">
+    <option value="SANATA">
+  </datalist>
+<input type="submit">
+<br>
+<h3> Progress </h3>
+<label for="file">Successfull:
+</label>
+<progress id="file" value="90" max="100"> 32% 
+</progress>
+<br>
+<br>
+<h3> ReadOnly </h3>
+<label for="country">Category:
+</label>
+  <input type="text" id="category" name="category" value="Sci-Fi" readonly>
+<br>
+<br>
+<h3> srcset </h3>
+<picture>
+  <source media="(min-width:800px)" srcset="witcher.jpg">
+  <source media="(min-width:465px)" srcset="witcher1.jpg">
+  <img src="witcher2.jpg" alt="error" style="width:300;">
+</picture>
+<br><br>
+<h3> Disabled </h3>
+<button type="button" disabled>Submit</button>
+<br><br>
+<h3> Auto Complete </h3>
+<method="get" autocomplete="on">
+  <label for="fname">First name:
+</label>
+  <input type="text" id="fname" name="fname">
+<br><br>
+  <label for="email">Email:
+</label>
+  <input type="text" id="email" name="email">
+<br><br>
+  <input type="submit">
+<br><br>
+<h3>  No Validate </h3>
+<label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit">
+<br><br>
+<h3> Auto Focus </h3>
+<label for="fname">Movie Name:</label>
+  <input type="text" id="mname" name="mname">
+<br><br>
+  <label for="lname">Category:</label>
+  <input type="text" id="category" name="category" autofocus>
+<br><br>
+  <input type="submit">
+<br><br>
+<h3> Place Holder </h3>
+ <label for="phone">Enter Birthday:
+</label>
+<br><br>
+  <input type="birthday" id="Birthday" name="Birthday" placeholder="dd/mm/yy" >
+<br><br>
+  <input type="submit">
+<br><br>
+<h3> Required </h3>
+<label for="category">Category:
+</label>
+<input type="text" id="category" name="category required> 
+<br>
+<br>
+<h3> Telephone Link </h3>
+<a href="tel:+0510099987"><br>
+<h3> Telephone Link </h3>
+051-2242959 </a>
+<br>
+<h3> Article </h3>
+<article>
+<h2>Witcher</h2>
+<p>The Witcher is a fantasy drama television series created by Lauren Schmidt Hissrich for Netflix, based on the book series of the same name by Polish writer Andrzej Sapkowski. Set on a fictional,</p>
+</article>
+<br>
+<h3> Footer And Email Link </h3>
+<footer>
+<p>Author: Rao Farhan<br>
+<a href="contact us">farhanrao525@google.com</a></p>
+</footer>
+<br>
+<h3> Section </h3>
+<section>
+<h2>Witcher</h2>
+<p>The Witcher is basically Game of Thrones, if Game of Thrones took itself less seriously. Part GOT, LOTR and Harry Potter, The Witcher's first season is a winner. Henry Cavill is perfectly cast in this sexy, fantastical world with lots of potential. [Full review in Spanish]</p>
+</section>
+<br>
+<h3> Picture </h3>
+<picture>
+<img src="witcher.jpg" style="width:auto;">
+</picture>
+<br>
+<h3> Audio Element </h3>
+<audio controls>
+<source src="horse.mp3" type="audio/mpeg">
+</audio>
+<br>
+<h3> Video Element </h3>
+<video width="320" height="240" controls>
+<source src="movie.mp4" type="video/mp4">
+</video>
+<br> 
+<h3> Overflow property </h3.
+<div id="abc">
+<p> The witcher is the science fiction movie that is related to the spirtual world and it is available on the Netflix
+</p>
+</div>
+<p><img src="witcher2.jpg" alt="witcher" style="width:170px;height:170px;margin-left:15px;">
+he Witcher is basically Game of Thrones, if Game of Thrones took itself less seriously. Part GOT, LOTR and Harry Potter, The Witcher's first season is a winner. Henry Cavil 
+</p>
+<h3> Position </h3>
+<br>
+<h5>
+heading with an absolute position
+</h5>
+<div class="xyz">
+<h1> z-index Property</h1>
+<img src="witcher.jpg" width="100" height="140">
+<p> Netflix, Inc. is an American subscription streaming service and production 
+company based in Los Gatos, California.
+</p>
+</form>
